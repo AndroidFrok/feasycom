@@ -50,14 +50,14 @@ class AdvertisingActivity : BaseActivity() {
 
     var number = 5;
     val timer = Timer()
-    val timerTask = object : TimerTask(){
+    val timerTask = object : TimerTask() {
         override fun run() {
-            if(number > 0){
+            if (number > 0) {
                 runOnUiThread {
                     to_main.text = "${number}s | Close"
                 }
-                number --
-            }else{
+                number--
+            } else {
                 this.cancel()
             }
         }
@@ -67,50 +67,56 @@ class AdvertisingActivity : BaseActivity() {
     private val handler = Handler(Handler.Callback {
         false
     })
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_advertising)
-            if (isFirstIn) {
-                GuideActivity.actionStart(this)
-                finish()
-            } else {
-                to_main.text = "${number}s | Close"
 
-                to_main.setOnClickListener {
-                    startActivity(Intent(this, MainActivity::class.java))
+        startActivity(Intent(this, MainActivity::class.java))
+        finish()
+        
+
+        if (isFirstIn) {
+            GuideActivity.actionStart(this)
+            finish()
+        } else {
+            to_main.text = "${number}s | Close"
+
+            to_main.setOnClickListener {
+                startActivity(Intent(this, MainActivity::class.java))
+                finish()
+            }
+
+            timer.schedule(timerTask, 1000, 1000)
+
+            lifecycleScope.launch {
+                launch {
+                    try {
+                        api.getLauch(parameter).apply {
+                            sp.edit {
+                                putString("url", data.image)
+                            }
+                            Log.e(TAG, "onCreate: " + data.image)
+                        }
+                    } catch (e: Exception) {
+
+                    }
+                }
+
+                launch {
+                    Glide.with(this@AdvertisingActivity)
+                            .load(sp.getString("url", "https://image.feasycom.com/lanchImage/beacon/lanch.png"))
+                            .diskCacheStrategy(DiskCacheStrategy.ALL)
+                            .into(lanch_img)
+                }
+
+                launch {
+                    delay(5000)
+                    startActivity(Intent(this@AdvertisingActivity, MainActivity::class.java))
                     finish()
                 }
-
-                timer.schedule(timerTask, 1000, 1000)
-
-                lifecycleScope.launch {
-                    launch {
-                        try {
-                            api.getLauch(parameter).apply {
-                                sp.edit {
-                                    putString("url", data.image)
-                                }
-                                Log.e(TAG, "onCreate: " + data.image )
-                            }
-                        }catch (e: Exception){
-
-                        }
-                    }
-
-                    launch {
-                        Glide.with(this@AdvertisingActivity)
-                                .load(sp.getString("url", "https://image.feasycom.com/lanchImage/beacon/lanch.png"))
-                                .diskCacheStrategy(DiskCacheStrategy.ALL)
-                                .into(lanch_img)
-                    }
-
-                    launch {
-                        delay(5000)
-                        startActivity(Intent(this@AdvertisingActivity, MainActivity::class.java))
-                        finish()
-                    }
-                }
             }
+        }
     }
 
     private val isFirstIn: Boolean
@@ -136,7 +142,7 @@ class AdvertisingActivity : BaseActivity() {
     override fun searchClick() {}
     override fun sensorClick() {}
 
-    companion object{
+    companion object {
         private const val TAG = "AdvertisingActivity"
     }
 }

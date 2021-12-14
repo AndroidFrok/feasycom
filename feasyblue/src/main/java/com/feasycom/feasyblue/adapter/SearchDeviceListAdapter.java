@@ -56,16 +56,24 @@ public class SearchDeviceListAdapter extends BaseAdapter {
     boolean filterRssiSwitch;
     boolean filterNameSwitch;
     int filterRssi;
-    String filterName;
+    String filterName = "fsc";
+
     public void addDevice(BluetoothDeviceWrapper deviceDetail) {
-        if (null == deviceDetail) return;
-        if(filterNameSwitch){
-            if(deviceDetail.getName() == null || !deviceDetail.getName().contains(filterName)){
+        if (null == deviceDetail) {
+            return;
+        }
+
+        if (filterNameSwitch) {
+            if (deviceDetail.getName() == null || !deviceDetail.getName().contains(filterName)) {
                 return;
             }
         }
-        if(filterRssiSwitch){
-            if(deviceDetail.getRssi() < (filterRssi - 100)){
+
+        if (deviceDetail.getName() == null || !deviceDetail.getName().contains("FSC")) {
+            return;
+        }
+        if (filterRssiSwitch) {
+            if (deviceDetail.getRssi() < (filterRssi - 100)) {
                 return;
             }
         }
@@ -84,7 +92,7 @@ public class SearchDeviceListAdapter extends BaseAdapter {
                     mDevices.add(deviceDetail);
                     notifyDataSetChanged();
                 }, 100);
-            }else {
+            } else {
                 mDevices.add(deviceDetail);
                 notifyDataSetChanged();
             }
@@ -92,9 +100,9 @@ public class SearchDeviceListAdapter extends BaseAdapter {
     }
 
     public void sort() {
-        for (int i=0; i < mDevices.size() - 1; i++) {
+        for (int i = 0; i < mDevices.size() - 1; i++) {
             for (int j = 0; j < mDevices.size() - 1 - i; j++) {
-                if (mDevices.get(j).getRssi() < mDevices.get(j + 1).getRssi() && mDevices.get(j).getBondState() != BluetoothDevice.BOND_BONDED && mDevices.get(j+1).getBondState() != BluetoothDevice.BOND_BONDED) {
+                if (mDevices.get(j).getRssi() < mDevices.get(j + 1).getRssi() && mDevices.get(j).getBondState() != BluetoothDevice.BOND_BONDED && mDevices.get(j + 1).getBondState() != BluetoothDevice.BOND_BONDED) {
                     BluetoothDeviceWrapper bd = mDevices.get(j);
                     mDevices.set(j, mDevices.get(j + 1));
                     mDevices.set(j + 1, bd);
@@ -196,6 +204,7 @@ public class SearchDeviceListAdapter extends BaseAdapter {
         ProgressBar pbRssi;
         @BindView(R.id.device_view)
         LinearLayout deviceView;
+
         ViewHolder(View view) {
             ButterKnife.bind(this, view);
         }

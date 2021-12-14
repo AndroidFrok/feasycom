@@ -13,22 +13,22 @@ import com.feasycom.feasyblue.viewmodel.SplashViewModel
 import kotlinx.android.synthetic.main.activity_splash.*
 import java.util.*
 
-class SplashScreenActivity: AppCompatActivity() {
+class SplashScreenActivity : AppCompatActivity() {
 
-    companion object{
+    companion object {
         private const val TAG = "SplashActivity"
     }
 
     private var number = 5;
     private val timer = Timer()
-    private val timerTask = object : TimerTask(){
+    private val timerTask = object : TimerTask() {
         override fun run() {
-            if(number > 0){
+            if (number > 0) {
                 runOnUiThread {
                     to_main.text = "${number}s | Close"
                 }
-                number --
-            }else{
+                number--
+            } else {
                 this.cancel()
                 startActivity(Intent(this@SplashScreenActivity, SearchDeviceActivity::class.java))
                 finish()
@@ -42,6 +42,8 @@ class SplashScreenActivity: AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        startActivity(Intent(this@SplashScreenActivity, SearchDeviceActivity::class.java))
+        finish()
         /*this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);*/
         //全屏设置
