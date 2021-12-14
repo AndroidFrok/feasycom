@@ -1,0 +1,29 @@
+package com.feasycom.feasyblue.bean;
+
+import java.io.Serializable;
+
+public class BaseEvent implements Serializable {
+    public static final int CUSTOMIZE_COMMAND_COUNT_CHANGE=0;
+    public static final int COMPLETE_COUNT_CHANGE=1;
+    private int eventId;
+    private Object param;
+    public BaseEvent(int evenid) {
+        this.eventId=evenid;
+    }
+
+    public int getEventId() {
+        return eventId;
+    }
+
+    public void setEventId(int eventId) {
+        this.eventId = eventId;
+    }
+
+    public Object getParam() {
+        return param;
+    }
+
+    public void setParam(Object param) {
+        this.param = param;
+    }
+}

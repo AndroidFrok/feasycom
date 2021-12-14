@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    //状态栏
+    //底栏
+
+    <color name="text_color_blue">#005fff</color>
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="grey">#b6b6b7</color>
+    <color name="red">#ff0000</color>
+
+
+    <color name="title_background">#f3f3f3</color>
+    <color name="title_left_right">#0e74bd</color>
+
+
+    <color name="about_text">#1074bc</color>
+
+    <color name="setting_rssi">#808080</color>
+    <color name="setting_mac">#323232</color>
+    <color name="setting_name">#333333</color>
+
+
+    <color name="beacon_info">#333333</color>
+    <color name="beacon_rssi">#595959</color>
+
+
+    <color name="about_title">#1d1d1d</color>
+
+    <color name="text_enable">#7b7b7b</color>
+    <color name="text_disable">#1d1d1d</color>
+
+    <color name="divide_line">#e5e5e5</color>
+</resources>

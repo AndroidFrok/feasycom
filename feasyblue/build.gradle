@@ -1,0 +1,160 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion 29
+    def appName = "feasyblue"
+    defaultConfig {
+        applicationId "com.feasycom.feasyblue"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 25
+        versionName "3.3.7"
+        flavorDimensions "versionCode"
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+        ndk {
+            abiFilters "arm64-v8a","armeabi-v7a","x86","x86_64"
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    applicationVariants.all { variant ->
+        variant.outputs.all { output ->
+            if (variant.buildType.name == 'release') {
+                def fileName = "${variant.flavorName}_${appName}_${variant.versionName}_R.apk"
+                outputFileName = fileName
+            } else {
+                def fileName = "${variant.flavorName}_${appName}_${variant.versionName}_D.apk"
+                outputFileName = fileName
+            }
+        }
+    }
+
+    productFlavors {
+    }
+
+    productFlavors.all {
+        flavor -> flavor.manifestPlaceholders = [UMENG_CHANNEL_VALUE: name]
+    }
+
+    sourceSets {
+        main {
+            res.srcDirs =
+                    [
+                            'src/main/res/layouts/fileselector',
+                            'src/main/res/layouts/activity',
+                            'src/main/res/layouts/adapter',
+                            'src/main/res/layouts/other',
+                            'src/main/res/layouts/widget_view',
+                            'src/main/res/layouts',
+                            'src/main/res/values',
+                            'src/main/res/values-zh-rCN',
+                            'src/main/res'
+                    ]
+        }
+    }
+
+    compileOptions {
+        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+   /* sourceSets{
+        main{
+            jni.srcDirs = ['src/main/jni']
+            jniLibs.srcDirs = ['libs']
+        }
+    }*/
+
+}
+
+
+
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.7'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.work:work-runtime:2.4.0'
+    implementation 'androidx.room:room-runtime:2.2.5'
+    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.3.0-beta01'
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.3.0-beta01"
+    // implementation project(path: ':feasycomlib')
+    // implementation project(path: ':feasycomlib')
+
+    androidTestImplementation('androidx.test.espresso:espresso-core:3.1.0', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+//    implementation 'com.jakewharton:butterknife:8.4.0'
+    implementation 'com.jakewharton:butterknife:10.2.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.1'
+    //noinspection GradleCompatible
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'org.greenrobot:eventbus:3.0.0'
+    testImplementation 'junit:junit:4.12'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.1'
+    implementation 'com.github.angads25:filepicker:1.1.1'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    implementation 'com.mylhyl:acp:1.2.0'
+    // implementation 'com.gitee.skyjing:ToolUitls:2.1.0'
+    implementation 'com.tencent.bugly:crashreport:3.2.33'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    //其中latest.release指代最新Bugly SDK版本号，也可以指定明确的版本号，例如2.2.0
+
+    implementation'com.squareup.retrofit2:retrofit:2.7.1'
+    implementation 'com.squareup.retrofit2:converter-gson:2.7.1'
+    implementation 'com.jakewharton.retrofit:retrofit2-kotlin-coroutines-adapter:0.9.2'
+
+    implementation 'com.swallowsonny:convert-ext:1.0.4'
+
+    implementation 'androidx.core:core-ktx:1.3.2'
+
+    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.3.0-beta01'
+
+    //图片加载库
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+
+    implementation'com.squareup.okhttp3:logging-interceptor:4.7.2'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    // 仿ios 开关
+    implementation 'com.github.iielse:switchbutton:1.0.4'
+    // 滑块
+    implementation 'com.github.Jay-Goo:RangeSeekBar:v3.0.0'
+}
+
+buildscript {
+    ext.kotlin_version = '1.4.20'
+    repositories {
+        jcenter()
+        google()
+        maven { url 'https://jitpack.io' }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.2.1'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.4.20"
+        // classpath 'com.jakewharton:butterknife-gradle-plugin:8.4.0'
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        google()
+        maven { url 'https://jitpack.io' }
+    }
+}

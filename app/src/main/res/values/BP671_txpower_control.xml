@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="BP671_txpower_table">
+        <item></item>
+        <item> -20db</item>
+        <item> -10.7</item>
+        <item>-9.5db</item>
+        <item>-8.2db</item>
+        <item>-7.0db</item>
+        <item>-6.5db</item>
+        <item>-0.5db</item>
+        <item>3.0db</item>
+        <item>4.5db</item>
+        <item>5.3db</item>
+        <item>6db</item>
+        <item>7.1db</item>
+        <item>8db</item>
+        <item>9.2db</item>
+        <item>10.2db</item>
+        <item>11db</item>
+        <item>12db</item>
+        <item>13db</item>
+        <item>14.1db</item>
+        <item>15db</item>
+        <item>16db</item>
+        <item>17db</item>
+        <item>18.1db</item>
+        <item>19db</item>
+        <item>20db</item>
+    </string-array>
+</resources>

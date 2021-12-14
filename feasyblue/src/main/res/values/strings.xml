@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FeasyBeacon</string>
+    //默认值
+    <string name="localLanguage">en</string>
+    <string name="ok">ok</string>
+    <string name="cancel">cancel</string>
+    <string name="userAndPrivacyAgreement">User Agreement and Privacy Agreement</string>
+    <string name="userAndPrivacyAgreementDetail">If you use APP, it means that you agree to the User Agreement and Privacy Agreement.Please go to "About" for details of the agreement.</string>
+    <string name="userAgreement">User agreement</string>
+    <string name="privacyAgreement">Privacy agreement</string>
+    <string name="back">&#60; Back</string>
+    <string name="detail">detail</string>
+
+    <string name="appName">FeasyBlue</string>
+    <string name="appVersion">3.1.0</string>
+
+    //pull down and refresh
+    <string name="pull_to_refresh">Pull to refresh</string>
+    <string name="release_to_refresh">Release to refresh</string>
+    <string name="refreshing">Refreshing</string>
+    <string name="not_updated_yet">Do not updated yet</string>
+    <string name="updated_at">Updated at %1$s</string>
+    <string name="updated_just_now">Updated just now</string>
+    <string name="time_error">Time error</string>
+
+    <string name="refresh">refresh</string>
+
+    // footer
+    <string name="communication">Communication</string>
+    <string name="setting">Setting</string>
+    <string name="about">About</string>
+    <string name="store">Store</string>
+
+    // search device activity
+    <string name="search">search</string>
+    <string name="searching">searching...</string>
+    <string name="searched">searched</string>
+    <string name="rssi">RSSI</string>
+    <string name="mac">MAC: </string>
+    <string name="paired">[Paired]</string>
+    <string name="sort">Sort</string>
+    <string name="filter">Filter</string>
+    <string name="filter_by_rssi">RSSI Filter</string>
+    <string name="filter_by_name">Name Filter</string>
+    <string name="minimum_rssi">Filtering threshold</string>
+
+    <string name="denied_message">You reject the permission application, this function will not work properly, you can go to the settings page to re-authorize</string>
+    <string name="denied_close">close</string>
+    <string name="denied_setting">setting</string>
+    <string name="rational_message">This feature requires your authorization, otherwise it will not work properly</string>
+    <string name="rational_btn">I know</string>
+
+
+    // throughput activity
+    <string name="clear">Clear</string>
+    <string name="receive">Receive</string>
+    <string name="send">Send</string>
+    <string name="byt">byte</string>
+    <string name="packge">packge </string>
+    <string name="sendFile">Send File</string>
+    <string name="sendPackge">Send</string>
+    <string name="intervalSend">Loop sending</string>
+    <string name="connected">connected</string>
+    <string name="disconnected">disconnected</string>
+    <string name="connecting">connecting</string>
+    <string name="default_interval_send_timer">100</string>
+    <string name="openSendFileError">Open file error</string>
+    <string name="stop">Stop</string>
+    <string name="digitsHex">0123456789abcdefABCDEF</string>
+    <string name="serviceInfo">Services Information</string>
+    <string name="characteristicInfo">Characteristic Information</string>
+    <string name="deviceInfo">Device Information</string>
+    <string name="modelNumber">Model Number</string>
+    <string name="manufacturerName">Manufacturer Name</string>
+    <string name="serialNumber">Serial Number(MAC)</string>
+    <string name="hardwareRevision">Hardware Revision</string>
+    <string name="softwareRevision">Software Revision</string>
+    <string name="save">Save</string>
+    <string name="advData">Advertising  Data</string>
+    <string name="transmissionConfiguration">Transmission Configuration</string>
+    <string name="byteString">Byte</string>
+    <string name="intervalHint">Interval</string>
+
+    <!--SettingActivity-->
+    <string name="properitiesDefining">Properities defining</string>
+    <string name="settingTitle">Setting</string>
+    <string name="connectTest">BT connection test</string>
+    <string name="OTAUpgrade">OTA upgrade</string>
+    <string name="wifi_setting_text">WiFiSetting</string>
+    <string name="quickConnection">Quick connection</string>
+
+    <!--parameterModify-->
+    <string name="begin">Begin</string>
+    <string name="deviceName">Name</string>
+    <string name="pin">Pin</string>
+    <string name="baud">Baud</string>
+    <string name="customizeSelect">Customize Select</string>
+    <string name="customizeCommand">Custom ∧</string>
+    <string name="customizeCommandHid">Custom ∨</string>
+    <string name="none">none</string>
+    <string name="compeletCount">Count</string>
+    <string name="name">Name</string>
+    <string name="addr">Address</string>
+    <string name="openEngineSuccess">Open engine success</string>
+    <string name="openEngineTimeOut">Open engine time out</string>
+    <string name="openEngineFailed">Open engine failure</string>
+    <string name="read">Read</string>
+    <string name="version">Version</string>
+    <string name="success">Successful</string>
+    <string name="failed">Failed</string>
+    <string name="same">The same as</string>
+    <string name="modify">Modifier</string>
+    <string name="timeout">Time out</string>
+    <string name="modifyComplete">Modifier complete</string>
+    <string name="password">Password</string>
+    <string name="modifyCompleteCount">Modify the number of completed</string>
+    <string name="commandNull">AT Command Null</string>
+    <!--ota-->
+    <string name="pleaseSelectTheFirmware">Please select firmware</string>
+    <string name="openFile">Open DFU</string>
+    <string name="downloadFile">Download DFU</string>
+    <string name="dfuName">DFU Name</string>
+    <string name="selectedFirmware">Selected</string>
+    <string name="notToChoose">None</string>
+    <string name="type">Type</string>
+    <string name="versionApp">APP version</string>
+    <string name="bootLoader">Bootloader</string>
+    <string name="module">Module</string>
+    <string name="firmware">Firmware</string>
+    <string name="toUpgrade">Upgrading</string>
+    <string name="restoreTheFactorySettings">Upgrade and back to default</string>
+    <string name="selectDfu">Please select a dfu file</string>
+    <string name="dfuIllegal">Illegal file</string>
+    <string name="waitingForUpdate">Waiting for update</string>
+    <string name="updating">Updating</string>
+    <string name="updateSuccess">Successful</string>
+    <string name="updateFailed">Failed</string>
+    <string name="nameNotMatch">Type not match</string>
+    <string name="versionIsLow">Firmware version is low</string>
+    <string name="blIsHight">BL is hight</string>
+    <string name="dfuFileError">dfu file error</string>
+
+    <!--about-->
+    <string name="company">Company</string>
+    <string name="company_name">Shenzhen Feasycom Technology Co.,Ltd</string>
+    <string name="tel_number">+86-0755-27924639</string>
+    <string name="tel">Tel</string>
+    <string name="web">Web</string>
+    <string name="web_url">www.feasycom.com</string>
+    <string name="mail">E-mail</string>
+    <string name="mail_addr">support@feasycom.com</string>
+    <string name="wc">WeChat Official AC</string>
+
+
+
+
+
+    <string name="cancel_button_label">Cancel</string>
+    <string name="choose_button_label">Select</string>
+    <string name="default_dir" translatable="false">/sdcard</string>
+    <string name="error_dir_access">Directory cannot be accessed</string>
+    <string name="label_parent_dir" translatable="false">...</string>
+    <string name="label_parent_directory">Parent Directory</string>
+    <string name="last_edit">Last edited: </string>
+
+
+
+    <!--文件选择器-->
+    <string name="dfileselector_module_name">DFileSelector</string>
+    <string name="dfileselector_folder_item">Item</string>
+    <string name="dfileselector_file_back">Upper level</string>
+    <string name="dfileselector_file_submit">OK</string>
+    <string name="dfileselector_file_no_documents">No documents</string>
+
+    <!--wifisetting view text-->
+    <string name="wifi_name">WiFi name</string>
+    <string name="wifi_psw">WiFi password</string>
+    <string name="wifi_dhcp">DHCP</string>
+    <string name="wifi_ip">IP address</string>
+    <string name="wifi_subnet_mask">Subnet Mask</string>
+    <string name="wifi_gateway">Gateway</string>
+    <string name="wifi_dns">DNS</string>
+    <string name="wifi_setting_btn">Setting</string>
+    <string name="wifi_psw_tips">Password length must be greater than or equal to 8</string>
+
+    <string name="wifiDefining">Wifi defining</string>
+
+    <string name="commset_tips">The instruction set cannot be empty. Please reset the instruction set</string>
+
+    <string name="pairing_record">Clear pairing history</string>
+</resources>

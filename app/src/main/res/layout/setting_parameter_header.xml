@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <com.feasycom.feasybeacon.BeaconView.LableEditView
+        android:id="@+id/Module"
+        style="@style/Label_Edit"
+        app:labelText="Model : "></com.feasycom.feasybeacon.BeaconView.LableEditView>
+
+    <View style="@style/divider"></View>
+
+
+    <com.feasycom.feasybeacon.BeaconView.LableEditView
+        android:id="@+id/Version"
+        style="@style/Label_Edit"
+        app:labelText="Version: "></com.feasycom.feasybeacon.BeaconView.LableEditView>
+
+    <View style="@style/divider"></View>
+
+    <com.feasycom.feasybeacon.BeaconView.LableEditView
+        android:id="@+id/Name"
+        style="@style/Label_Edit"
+        app:labelText="Name: "></com.feasycom.feasybeacon.BeaconView.LableEditView>
+
+    <View style="@style/divider"></View>
+
+    <com.feasycom.feasybeacon.BeaconView.LableEditView
+        android:id="@+id/PIN"
+        style="@style/Label_Edit"
+        android:visibility="gone"
+        app:labelText="Pin: "></com.feasycom.feasybeacon.BeaconView.LableEditView>
+
+    <View
+        android:id="@+id/PIN_divider"
+        android:visibility="gone"
+        style="@style/divider"></View>
+
+    <com.feasycom.feasybeacon.BeaconView.LableEditView
+        android:id="@+id/Interval"
+        android:visibility="gone"
+        style="@style/Label_Edit"
+        app:labelText="Interval(ms): "></com.feasycom.feasybeacon.BeaconView.LableEditView>
+
+    <View style="@style/divider"></View>
+
+
+    <com.feasycom.feasybeacon.BeaconView.IntervalSpinnerView
+        android:id="@+id/adv_interval"
+        style="@style/Label_Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:labelText="Interval(ms): "></com.feasycom.feasybeacon.BeaconView.IntervalSpinnerView>
+
+    <View
+        android:id="@+id/AdvIntervalDivider"
+        style="@style/divider"></View>
+
+
+    <com.feasycom.feasybeacon.BeaconView.LableEditView
+        android:id="@+id/Gsensor"
+        android:visibility="gone"
+        style="@style/Label_Edit"
+        app:labelText="Gsensor: "></com.feasycom.feasybeacon.BeaconView.LableEditView>
+
+    <View style="@style/divider"></View>
+
+    <com.feasycom.feasybeacon.BeaconView.GsensorSpinnerView
+        android:id="@+id/adv_gsensor"
+        style="@style/Label_Button"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:labelText="Gsensor: "></com.feasycom.feasybeacon.BeaconView.GsensorSpinnerView>
+
+    <View style="@style/divider"></View>
+
+    <com.feasycom.feasybeacon.BeaconView.LableEditView
+        android:id="@+id/Keycfg"
+        android:visibility="gone"
+        style="@style/Label_Edit"
+        app:labelText="Key: "></com.feasycom.feasybeacon.BeaconView.LableEditView>
+
+    <View style="@style/divider"></View>
+
+    <com.feasycom.feasybeacon.BeaconView.KeycfgSpinnerView
+        android:id="@+id/adv_keycfg"
+        style="@style/Label_Button"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:labelText="Key: "></com.feasycom.feasybeacon.BeaconView.KeycfgSpinnerView>
+
+    <View style="@style/divider"></View>
+
+
+    <com.feasycom.feasybeacon.BeaconView.LableSpinnerView
+        android:id="@+id/TxPower"
+        style="@style/Label_Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:labelText="TxPower: "></com.feasycom.feasybeacon.BeaconView.LableSpinnerView>
+
+    <View
+        android:id="@+id/TxPowerDivider"
+        style="@style/divider"></View>
+
+    <com.feasycom.feasybeacon.BeaconView.LableButtonView
+        android:id="@+id/Connectable"
+        style="@style/Label_Button"
+        app:labelText="Connectable: "></com.feasycom.feasybeacon.BeaconView.LableButtonView>
+
+    <View
+        android:id="@+id/ConnectableDivider"
+        style="@style/divider"></View>
+
+    <com.feasycom.feasybeacon.BeaconView.LableEditView
+        android:id="@+id/ExtEnd"
+        style="@style/Label_Edit"
+        app:labelText="Extend: "></com.feasycom.feasybeacon.BeaconView.LableEditView>
+
+    <View style="@style/divider"></View>
+
+</LinearLayout>
+
+

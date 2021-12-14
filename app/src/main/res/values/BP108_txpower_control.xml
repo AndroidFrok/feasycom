@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="BP108_txpower_table">
+        <item></item>
+        <item>-19.5db</item>    <!--0-->
+        <item>-13.5db</item>    <!--1-->
+        <item>-10.0db</item>    <!--2-->
+        <item>-7.0db</item>     <!--3-->
+        <item>-5.0db</item>     <!--4-->
+        <item>-3.5db</item>     <!--5-->
+        <item>-2.0db</item>     <!--6-->
+        <item>-1.0db</item>     <!--7-->
+        <item>0db</item>        <!--8-->
+        <item>1.0db</item>      <!--9-->
+        <item>1.5db</item>      <!--A-->
+        <item>2.5db</item>      <!--B-->
+    </string-array>
+</resources>
+

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FeasyBeacon</string>
+
+    //默认值
+    <!-- 默认 0db-->
+    <string name="localLanguage">en</string>
+    <string name="ok">ok</string>
+    <string name="cancel">cancel</string>
+    <string name="userAndPrivacyAgreement">User Agreement and Privacy Agreement</string>
+    <string name="userAndPrivacyAgreementDetail">If you use APP, it means that you agree to the User Agreement and Privacy Agreement.Please go to "About" for details of the agreement.</string>
+
+    <!-- tab -->
+    <string name="setting">Setting</string>
+    <string name="about">About</string>
+
+    //关于
+    <string name="more">more ></string>
+    <string name="about_title">About Feasycom</string>
+    <string name="company">Company</string>
+    <string name="company_name">Shenzhen Feasycom Technology Co.,Ltd</string>
+    <string name="tel_number">+86-0755-23062695</string>
+    <string name="tel">Tel</string>
+    <string name="web">Web</string>
+    <string name="web_url">www.feasycom.com</string>
+    <string name="mail">E-mail</string>
+    <string name="mail_addr">support@feasycom.com</string>
+    <string name="Facebook">Facebook</string>
+    <string name="FaceBook_addr">Feasycom</string>
+    <string name="appVersion">Version</string>
+    <string name="userAgreement">User agreement</string>
+    <string name="privacyAgreement">Privacy agreement</string>
+    <string name="userGuide">User guide</string>
+
+    <string name="detail">detail</string>
+    <string name="denied_message">You reject the permission application, this function will not work properly, you can go to the settings page to re-authorize</string>
+    <string name="denied_close">close</string>
+    <string name="denied_setting">setting</string>
+    <string name="rational_message">This feature requires your authorization, otherwise it will not work properly</string>
+    <string name="rational_btn">I know</string>
+
+
+    // header
+    <string name="back">&#60; Back</string>
+    <string name="save">Save</string>
+    <string name="parameter_setting_title">Parameter Setting</string>
+    <string name="update">Update </string>
+    <string name="add_beacon_title">Add Beacon</string>
+    <string name="add_beacon_right">Finish</string>
+
+    <string name="title_activity_filter_device">FilterDeviceActivity</string>
+    <string name="filter_by_rssi">Filter Enable</string>
+    <string name="minimum_rssi">Minimum RSSI:</string>
+
+    // Function
+    Password
+    <string name="hint_input_PIN"></string>
+    //下拉刷新
+    <string name="pull_to_refresh">Pull to refresh</string>
+    <string name="release_to_refresh">Release to refresh</string>
+    <string name="refreshing">Refreshing</string>
+    <string name="not_updated_yet">Do not updated yet</string>
+    <string name="updated_at">Updated at %1$s</string>
+    <string name="updated_just_now">Updated just now</string>
+    <string name="time_error">Time error</string>
+
+
+    // 参数修改
+    //版本消息
+    <string name="version_name">3.1.7</string>
+    <string name="version_update">Get the newest version</string>
+    //设备过滤
+
+    //OTA
+    <string name="otaFile">File: </string>
+    <string name="module">Module</string>
+    <string name="appVwesion">AppVersion</string>
+    <string name="blVwesion">BLVersion</string>
+    <string name="current">Current</string>
+    <string name="except">New</string>
+    <string name="rest">Rest</string>
+    <string name="start">Start</string>
+    <string name="selectFile">SelectFile</string>
+
+</resources>

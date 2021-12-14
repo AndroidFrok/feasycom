@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="interval_table">
+        <item>100ms</item>  <!--0-->
+        <item>150ms</item>
+        <item>200ms</item>
+        <item>300ms</item>
+        <item>400ms</item>
+        <item>550ms</item>
+        <item>750ms</item>
+        <item>850ms</item>
+        <item>1000ms</item>       <!--8-->
+        <item>1300ms</item>       <!--9-->
+        <item>2000ms</item>       <!--a-->
+    </string-array>
+
+    <string-array name="interval_table_1">
+        <item>0ms</item>
+        <item>100ms</item>  <!--0-->
+        <item>150ms</item>
+        <item>200ms</item>
+        <item>300ms</item>
+        <item>400ms</item>
+        <item>550ms</item>
+        <item>750ms</item>
+        <item>850ms</item>
+        <item>1000ms</item>       <!--8-->
+        <item>1300ms</item>       <!--9-->
+        <item>2000ms</item>       <!--a-->
+        <item>3000ms</item>       <!--a-->
+        <item>4000ms</item>       <!--a-->
+        <item>5000ms</item>       <!--a-->
+        <item>6000ms</item>       <!--a-->
+        <item>7000ms</item>       <!--a-->
+        <item>8000ms</item>       <!--a-->
+        <item>9000ms</item>       <!--a-->
+        <item>10000ms</item>       <!--a-->
+    </string-array>
+    <string-array name="advin">
+        <item>0ms</item>
+        <item>100ms</item>  <!--0-->
+        <item>150ms</item>
+        <item>200ms</item>
+        <item>300ms</item>
+        <item>400ms</item>
+        <item>550ms</item>
+        <item>750ms</item>
+        <item>850ms</item>
+        <item>1000ms</item>       <!--8-->
+        <item>1300ms</item>       <!--9-->
+        <item>2000ms</item>       <!--a-->
+    </string-array>
+    <string-array name="duration">
+        <item></item>
+        <item>1000ms</item>  <!--0-->
+        <item>5000ms</item>
+        <item>10000ms</item>
+        <item>15000ms</item>
+        <item>20000ms</item>
+        <item>25000ms</item>
+        <item>30000ms</item>
+        <item>35000ms</item>
+        <item>40000ms</item>       <!--8-->
+        <item>45000ms</item>       <!--9-->
+        <item>50000ms</item>       <!--9-->
+        <item>55000ms</item>       <!--9-->
+        <item>60000ms</item>       <!--9-->
+    </string-array>
+</resources>

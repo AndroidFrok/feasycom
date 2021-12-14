@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        style="@style/Header_LL">
+        <TextView
+            android:id="@+id/header_left"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_gravity="bottom"
+            android:textColor="@color/title_left_right"
+            />
+        <TextView
+            android:id="@+id/header_title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/setting_name"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/header_right"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:layout_gravity="bottom"
+            android:textColor="@color/title_left_right"
+            android:textSize="14sp"/>
+    </LinearLayout>
+</merge>

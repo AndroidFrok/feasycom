@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/header" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            style="@style/iBeaconEditLL"
+            android:layout_marginTop="20dp">
+            <TextView
+                style="@style/setting_parameter_left_text"
+                android:text="Broadcast Type       " />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <Spinner
+                    android:id="@+id/beaconType"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.feasycom.feasybeacon.BeaconView.iBeaconView
+            android:id="@+id/setting_parameter_ibeacon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"></com.feasycom.feasybeacon.BeaconView.iBeaconView>
+
+
+        <com.feasycom.feasybeacon.BeaconView.Eddystone_UIDView
+            android:id="@+id/setting_parameter_eddystone_uid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"></com.feasycom.feasybeacon.BeaconView.Eddystone_UIDView>
+
+        <com.feasycom.feasybeacon.BeaconView.Eddystone_URLView
+            android:id="@+id/setting_parameter_eddystone_url"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"></com.feasycom.feasybeacon.BeaconView.Eddystone_URLView>
+
+        <com.feasycom.feasybeacon.BeaconView.AltBeaconView
+            android:id="@+id/setting_parameter_altbeacon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"></com.feasycom.feasybeacon.BeaconView.AltBeaconView>
+    </LinearLayout>
+
+    <include layout="@layout/footer" />
+</LinearLayout>

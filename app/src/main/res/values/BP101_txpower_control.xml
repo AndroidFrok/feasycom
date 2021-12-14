@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="BP101_txpower_table">
+        <item></item>
+        <item>0db</item>        <!--0-->
+        <item>1db</item>        <!--1-->
+        <item>2db</item>        <!--2-->
+        <item>3db</item>        <!--3-->
+        <item>4db</item>        <!--4-->
+        <item>5db</item>        <!--5-->
+        <item>6db</item>        <!--6-->
+        <item>7db</item>        <!--7-->
+        <item>8db</item>        <!--8-->
+        <item>9db</item>        <!--9-->
+        <item>10db</item>       <!--A-->
+    </string-array>
+</resources>
+
